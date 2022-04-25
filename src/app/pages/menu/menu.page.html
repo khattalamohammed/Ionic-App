@@ -1,0 +1,13 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom" class="p-2">
+    <ion-tab-button tab="list">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button *ngIf="isLogged" tab="dashboard">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-label>Dashboard</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

@@ -1,0 +1,33 @@
+<ion-content>
+  <div class="flex items-center justify-start mb-5">
+    <ion-back-button
+      mode="md"
+      text=""
+      defaultHref="/details"
+      color="primary"
+      class="text-xl"
+    ></ion-back-button>
+  </div>
+  <div class="text-center p-3">
+    <h1 class="mt-10 text-3xl font-bold">LOGIN</h1>
+    <ion-item class="mt-14">
+      <ion-label position="floating">Login</ion-label>
+      <ion-input type="text" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item class="mt-4">
+      <ion-label position="floating">password</ion-label>
+      <ion-input type="password" [(ngModel)]="pass"></ion-input>
+    </ion-item>
+    <div class="mt-10">
+      <ion-button class="w-full" (click)="login()" shape="round">
+        sign in
+      </ion-button>
+    </div>
+    <p class="mt-8">----------or----------</p>
+    <div class="mt-8">
+      <ion-button class="w-full" (click)="signup()" shape="round">
+        signup
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

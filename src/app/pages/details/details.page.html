@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="flex items-center justify-start mb-5">
+    <ion-back-button
+      mode="md"
+      text="Details"
+      defaultHref="/details"
+      color="primary"
+      class="text-2xl"
+    ></ion-back-button>
+  </div>
+  <img src="{{ formation.img }}" class="w-full h-[200px]" />
+  <div class="p-2">
+    <p class="text-base font-bold">{{ formation.name }}</p>
+    <p class="text-base">{{ formation.description }}</p>
+    <p class="text-base font-bold">{{ formation.author }}</p>
+    <p class="text-base font-bold">{{ formation.price }}$</p>
+    <button class="p-2 bg-sky-700 text-white mt-10 rounded" (click)="login()">
+      s'inscrire
+    </button>
+  </div>
+</ion-content>

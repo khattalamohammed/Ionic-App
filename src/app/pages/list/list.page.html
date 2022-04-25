@@ -1,0 +1,23 @@
+<ion-content class="bg-white">
+  <div class="h-3"></div>
+  <div class="p-2">
+    <div
+      class="flex justify-start mb-4 rounded-xl"
+      *ngFor="let item of formations | async"
+      style="background-color: #dbecea"
+      (click)="showDetails(item.id)"
+    >
+      <div>
+        <img
+          class="w-28 h-full mr-3 rounded-tl-xl rounded-bl-xl"
+          src="{{item.img}}"
+        />
+      </div>
+      <div class="p-2 text-base">
+        <p class="font-bold">{{item.name}}</p>
+        <p class="">{{item.author}}</p>
+        <p class="font-bold">{{item.price}}$</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

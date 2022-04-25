@@ -1,0 +1,16 @@
+<ion-content>
+  <div class="p-2">
+    <h1 class="ml-5 text-blue text-2xl">Bonjour! {{userName}}</h1>
+    <h3 class="ml-5 mb-3 pb-3">voila la liste de vos formations</h3>
+    <div
+      class="flex justify-start mb-4 rounded-xl"
+      *ngFor="let item of myFormations"
+      style="background-color: #dbecea"
+    >
+      <div class="p-2 text-base">
+        <p class="font-bold">{{ item.name }}</p>
+        <p class="">{{ item.author }}</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

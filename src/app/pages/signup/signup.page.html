@@ -1,0 +1,45 @@
+<ion-content>
+  <div class="flex items-center justify-start mb-5">
+    <ion-back-button
+      mode="md"
+      text=""
+      defaultHref="/details"
+      color="primary"
+      class="text-xl"
+    ></ion-back-button>
+  </div>
+  <div class="p-3">
+    <div class="text-center mb-10 mt-5 text-3xl font-bold">
+      <h1>SIGN UP</h1>
+    </div>
+    <ion-item class="mb-5 w-full">
+      <ion-label position="floating">nom d'utilisateur</ion-label>
+      <ion-input [(ngModel)]="name" required></ion-input>
+    </ion-item>
+    <ion-item class="mb-5 w-full">
+      <ion-label position="floating">login</ion-label>
+      <ion-input type="email" [(ngModel)]="login" required></ion-input>
+    </ion-item>
+    <ion-item class="w-full mb-5">
+      <ion-label position="floating">mot de pass</ion-label>
+      <ion-input
+        minlength="6"
+        type="password"
+        [(ngModel)]="pass"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item class="w-full mb-7">
+      <ion-label position="floating">confirmer votre mot de pass </ion-label>
+      <ion-input
+        minlength="6"
+        type="password"
+        [(ngModel)]="passCon"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-button class="w-full" (click)="signup()" shape="round">
+      sign up
+    </ion-button>
+  </div>
+</ion-content>
